@@ -39,7 +39,8 @@ jobs:
             echo "VITE_BASE_PATH=/$REPO/" >> "$GITHUB_ENV"
           fi
 
-      - run: npm ci
+      - name: Instalar dependencias (ci con fallback)
+        run: npm ci || npm install
       - run: npm run build
 
       - uses: actions/upload-pages-artifact@v3
