@@ -65,7 +65,7 @@ export const skillGroups: { title: string; items: SkillRow[] }[] = [
     title: 'IA y automatización',
     items: [
       { label: 'LangChain', icon: 'langchain' },
-      { label: 'agentes de IA', icon: 'openai' },
+      { label: 'agentes de IA', icon: 'workflow' },
     ],
   },
   {
@@ -113,7 +113,7 @@ export type BuiltRow = { text: string; icons: TechIconId[] }
 export const builtHighlights: BuiltRow[] = [
   {
     text: 'Agentes de inteligencia artificial con LangChain.',
-    icons: ['langchain', 'openai'],
+    icons: ['langchain', 'workflow'],
   },
   {
     text: 'APIs REST con Express y Node.js (JavaScript y TypeScript).',
