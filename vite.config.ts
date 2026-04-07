@@ -6,8 +6,12 @@ import { defineConfig } from 'vite'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
+/** GitHub Pages (proyecto): /nombre-repo/. User site USER.github.io: "/". Ver workflow deploy. */
+const base = process.env.VITE_BASE_PATH ?? '/'
+
 // https://vite.dev/config/
 export default defineConfig({
+  base,
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
