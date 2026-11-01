@@ -1,4 +1,12 @@
-import { Compass, Sparkles, Workflow, type LucideIcon } from 'lucide-react'
+import {
+  Award,
+  Bot,
+  Briefcase,
+  GraduationCap,
+  Sparkles,
+  Workflow,
+  type LucideIcon,
+} from 'lucide-react'
 
 import { cn } from '@/lib/utils'
 import {
@@ -8,12 +16,15 @@ import {
 } from '@/lib/tech-brand-meta'
 
 const LUCIDE_BY_NAME: Record<
-  'workflow' | 'sparkles' | 'compass',
+  'workflow' | 'sparkles' | 'award' | 'graduation' | 'bot' | 'briefcase',
   LucideIcon
 > = {
   workflow: Workflow,
   sparkles: Sparkles,
-  compass: Compass,
+  award: Award,
+  graduation: GraduationCap,
+  bot: Bot,
+  briefcase: Briefcase,
 }
 
 type TechBrandIconProps = {
@@ -47,6 +58,7 @@ export function TechBrandIcon({
   const { slug, color } = src
   const url = techIconCdnUrl(slug, color)
   const needsLightTray = id === 'express'
+  const needsDarkTray = id === 'bun'
 
   const img = (
     <img
@@ -73,6 +85,7 @@ export function TechBrandIcon({
       className={cn(
         'inline-flex size-8 shrink-0 items-center justify-center rounded-md border border-border/60 bg-muted/50',
         needsLightTray && 'bg-white dark:bg-zinc-200',
+        needsDarkTray && 'bg-zinc-800',
         className
       )}
     >
