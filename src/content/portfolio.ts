@@ -6,8 +6,6 @@ export const LINKEDIN_URL =
 /** Perfil de GitHub (overview, no la pestaña followers). */
 export const GITHUB_URL = 'https://github.com/Xaniel-ac10'
 
-export const WHATSAPP_URL = 'https://wa.me/593983149829'
-
 export const CV_URL = '/cv-jose-daniel-aranda.pdf'
 
 export const CONTACT_EMAIL = 'arandaj232@gmail.com' as const
@@ -23,7 +21,7 @@ export const profile = {
   age: 22,
   location: 'Guayaquil, Ecuador',
   tagline:
-    'Automatizo procesos y conecto sistemas que terminan en producción, no en una demo: ahí están Ocean Trans, Marphones e IT Store. También meto mano en ciberseguridad y hacking ético. Escríbeme por correo; más detalle en LinkedIn y repos en GitHub.',
+    'Me gusta que las cosas funcionen sin fricciones: automatizo procesos, conecto sistemas y, cuando se puede, meto mano en ciberseguridad y hacking ético. Escríbeme por correo.',
 } as const
 
 export type SkillRow = { label: string; icon: TechIconId }

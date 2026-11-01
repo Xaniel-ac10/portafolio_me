@@ -6,12 +6,7 @@ import {
   MapPin,
 } from 'lucide-react'
 
-import {
-  GitHubLogo,
-  GmailLogo,
-  LinkedInLogo,
-  WhatsAppLogo,
-} from '@/components/brand-icons'
+import { GitHubLogo, GmailLogo, LinkedInLogo } from '@/components/brand-icons'
 import { TechBrandIcon } from '@/components/tech-brand-icon'
 import { Badge } from '@/components/ui/badge'
 import { BlurFade } from '@/components/ui/blur-fade'
@@ -33,7 +28,6 @@ import {
   CV_URL,
   GITHUB_URL,
   LINKEDIN_URL,
-  WHATSAPP_URL,
   mailtoContactHref,
   profile,
   projects,
@@ -130,16 +124,6 @@ function App() {
                     >
                       <GitHubLogo className="size-[22px]" />
                       GitHub
-                    </a>
-                  </Button>
-                  <Button asChild size="lg" variant="outline" className="gap-2.5">
-                    <a
-                      href={WHATSAPP_URL}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <WhatsAppLogo className="size-[22px]" />
-                      WhatsApp
                     </a>
                   </Button>
                 </div>
